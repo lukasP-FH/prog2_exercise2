@@ -127,4 +127,13 @@ public class TrafficLightCtrl {
     public void stop() {
         doRun = false;
     }
+
+    public void reset() {
+        currentState = greenState;
+        previousState = yellowState;
+    }
+
+    public State getCurrentState() {
+        return currentState;
+    }
 }
